@@ -7,8 +7,7 @@ Loader::init();
 
 
 $config = new Zend_Config_Xml(APPLICATION_PATH . '/../config/config.xml');
-$nFeed  = new nFeed();
-$feeder = $nFeed->create('hurriyet', $config);
+$feeder = nFeed::create('hurriyet', $config);
 $types = $feeder->getTypes();
 $feeds = $feeder->getFeeds($types->get('gundem'));
 foreach($feeds as $feed) {
