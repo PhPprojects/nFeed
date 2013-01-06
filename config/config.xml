@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <milliyet>
+        <config>
+            <format>XML</format>
+        </config>
+        <types>
+            <turkiye><![CDATA[http://www.milliyet.com.tr/D/rss/rss/Rss_24.xml]]></turkiye>
+            <dunya><![CDATA[http://rss.feedsportal.com/c/32727/f/510886/index.rss]]></dunya>
+            <ekonomi><![CDATA[http://rss.feedsportal.com/c/32727/f/510887/index.rss]]></ekonomi>
+            <siyaset><![CDATA[http://rss.feedsportal.com/c/32727/f/510889/index.rss]]></siyaset>
+            <yasam><![CDATA[http://rss.feedsportal.com/c/32727/f/510891/index.rss]]></yasam>
+            <spor><![CDATA[http://skorer.milliyet.com.tr/d/skorer.xml]]></spor>
+            <magazin><![CDATA[http://www.milliyet.com.tr/D/rss/rss/Rss_23.xml]]></magazin>
+            <gundem><![CDATA[http://www.milliyet.com.tr/D/rss/rss/Rss_24.xml]]></gundem>
+        </types>
+    </milliyet>
+    <hurriyet>
+        <config>
+            <format>XML</format>
+        </config>
+        <types>
+            <gundem><![CDATA[http://rss.hurriyet.com.tr/rss.aspx?sectionId=2]]></gundem>
+            <ekonomi><![CDATA[http://rss.hurriyet.com.tr/rss.aspx?sectionId=4]]></ekonomi>
+            <magazin><![CDATA[http://rss.hurriyet.com.tr/rss.aspx?sectionId=2035]]></magazin>
+            <spor><![CDATA[http://rss.hurriyet.com.tr/rss.aspx?sectionId=14]]></spor>
+        </types>
+    </hurriyet>
+    <sabah>
+        <config>
+            <format>XML</format>
+        </config>
+        <types>
+            <ekonomi><![CDATA[http://sabah.com.tr.feedsportal.com/c/33784/f/606057/index.rss]]></ekonomi>
+            <dunya><![CDATA[http://sabah.com.tr.feedsportal.com/c/33784/f/606059/index.rss]]></dunya>
+            <gundem><![CDATA[http://sabah.com.tr.feedsportal.com/c/33784/f/606058/index.rss]]></gundem>
+            <spor><![CDATA[http://sabah.com.tr.feedsportal.com/c/33784/f/606060/index.rss]]></spor>
+            <magazin><![CDATA[http://sabah.com.tr.feedsportal.com/c/33784/f/606063/index.rss]]></magazin>
+            <yasam><![CDATA[http://sabah.com.tr.feedsportal.com/c/33784/f/606066/index.rss]]></yasam>
+        </types>
+    </sabah>
+</config>
+
