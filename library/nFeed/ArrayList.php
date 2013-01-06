@@ -33,7 +33,7 @@ class ArrayList implements Iterator
     {
         return isset( $this->_collection[ $this->key() ] );
     }
-    
+
     public function add($key = '', $value)
     {
         if($key) {

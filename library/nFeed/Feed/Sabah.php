@@ -3,9 +3,9 @@ class Feed_Sabah extends Feed_Abstract
 {
     protected $_channel = 'sabah';
 
-	protected function _getTypes()
-	{
-	    $types      = $this->_config->{$this->_channel}->types;
+    protected function _getTypes()
+    {
+        $types      = $this->_config->{$this->_channel}->types;
         $collection = new ArrayList();
 
         foreach($types->toArray() as $type => $typeUrl) {
@@ -13,19 +13,19 @@ class Feed_Sabah extends Feed_Abstract
         }
 
         return $collection;
-	}
+    }
 
-	protected function _getFeeds($data)
-	{
+    protected function _getFeeds($data)
+    {
         $collection = new ArrayList();
 
         foreach( $data->channel->item as $item ) {
             $feed = new Feed( (string)  $item->title, 
-                              (string) strip_tags($item->description), 
-                              (string) $item->link);
+                    (string) strip_tags($item->description), 
+                    (string) $item->link);
             $collection->add('', $feed);
         }
 
         return $collection;
-	}
+    }
 }

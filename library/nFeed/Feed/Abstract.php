@@ -4,7 +4,7 @@ abstract class Feed_Abstract
     /**
      * @var Zend_Config
      */
-	protected $_config;
+    protected $_config;
 
     /**
      * @var string
@@ -38,7 +38,7 @@ abstract class Feed_Abstract
     {
         $ch      = curl_init();
         $options = array(CURLOPT_URL => $url,
-                        CURLOPT_RETURNTRANSFER => true);
+                CURLOPT_RETURNTRANSFER => true);
         curl_setopt_array($ch, $options);
         $result  = curl_exec($ch);
         $error   = curl_error($ch);
@@ -48,7 +48,7 @@ abstract class Feed_Abstract
         }
         return $result;
     }
-    
+
     /**
      * returns feeds
      * @param string $typeUrl
